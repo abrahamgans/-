@@ -6,12 +6,12 @@ let sender;
 if (url.searchParams.get('by') != null) {
   sender = url.searchParams.get('by');
 } else {
-  sender = "Febrian";
+  sender = "Abraham Benedick";
 }
 
 
 document.querySelector(".tombol").addEventListener('click', function () {
-  Swal.fire("Hallo Pacarku", "Aku ada pertanyaan nih buat kamu yangg", "question").then(function () {
+  Swal.fire("Hallo Pacarku", "Aku ada pertanyaan nih buat kamu yang", "question").then(function () {
     Swal.fire("Jawab yang jujur ya!").then(function () {
       Swal.fire("Awas aja kalau kamu bohong", "", "error").then(function () {
 
@@ -59,13 +59,13 @@ document.querySelector(".tombol").addEventListener('click', function () {
                       showDenyButton: true,
                       showCancelButton: false,
                       confirmButtonText: `Kangen :(`,
-                      denyButtonText: `Enggak`,
+                      denyButtonText: `Enggak :/`,
                     }).then((result) => {
                       /* Read more about isConfirmed, isDenied below */
                       if (result.isConfirmed) {
                         Swal.fire(`Huhu iya ${sender} juga kangen ${nama} , makasihhh yaa`).then(function () {
-                          Swal.fire('Terakhir deh sayang').then(function () {
-                            Swal.fire('Coba klik ikon hati di paling bawah dong')
+                          Swal.fire('Terakhir deh nih sayang').then(function () {
+                            Swal.fire('Coba klik ikon hati di paling bawah dong :)')
                           })
                         })
                       } else if (result.isDenied) {
