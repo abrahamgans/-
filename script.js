@@ -24,7 +24,7 @@ document.querySelector(".tombol").addEventListener('click', function () {
           showCancelButton: true,
           inputValidator: (value) => {
             if (!value) {
-              return 'Isi dulu dong beb'
+              return 'Isi dulu dong by :('
             } else {
               nama = value;
             }
